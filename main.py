@@ -56,7 +56,18 @@ def text(message):
 
         elif keyboard_buttons['edit_exif'] in msg:
             user_change_step(message, 'edit_exif_start')
-            easy_send_message(message, texts_array['edit_exif_start'], 'back_to_menu')
+            easy_send_message(
+                message, texts_array['edit_exif_start'], 'back_to_menu')
+
+        elif keyboard_buttons['help'] in msg:
+            user_change_step(message, 'help')
+            easy_send_message(
+                message, texts_array['help'], 'help')
+
+        elif keyboard_buttons['st'] in msg:
+            user_change_step(message, 'st')
+            easy_send_message(
+                message, texts_array['st'], 'st')
 
         elif keyboard_buttons['create_mrz'] in msg:
             user_change_step(message, 'create_mrz_start')
@@ -164,6 +175,7 @@ def get_keyboard(typeof, from_id=None):
         keyboard.row(keyboard_buttons['delete_exif'])
         keyboard.row(keyboard_buttons['edit_exif'])
         keyboard.row(keyboard_buttons['create_mrz'])
+        keyboard.row(keyboard_buttons['st'])
         keyboard.row(keyboard_buttons['help'])
     elif typeof == 'back_to_menu':
         keyboard.row(keyboard_buttons['back_to_menu'])
