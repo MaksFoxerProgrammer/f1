@@ -1,0 +1,5 @@
+pyTelegramBotAPI==3.7.3
+ip2geotools==0.1.5
+Pillow==8.0.0
+exif==1.0.2
+cherrypy==18.6.0

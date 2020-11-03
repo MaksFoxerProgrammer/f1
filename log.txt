@@ -1,0 +1,20 @@
+22.10.2020 19:45:44  Traceback (most recent call last):
+22.10.2020 19:45:44    File "C:\Users\robot\exif_geo_bot-main\main.py", line 77, in text
+22.10.2020 19:45:44      last_logs(message)
+22.10.2020 19:45:44    File "C:\Users\robot\exif_geo_bot-main\main.py", line 817, in last_logs
+22.10.2020 19:45:44      bot.send_document(message.chat.id, data=f, caption=answer)
+22.10.2020 19:45:44    File "C:\Users\robot\AppData\Local\Programs\Python\Python37\lib\site-packages\telebot\__init__.py", line 765, in send_document
+22.10.2020 19:45:44      parse_mode, disable_notification, timeout, caption, thumb))
+22.10.2020 19:45:44    File "C:\Users\robot\AppData\Local\Programs\Python\Python37\lib\site-packages\telebot\apihelper.py", line 675, in send_data
+22.10.2020 19:45:44      return _make_request(token, method_url, params=payload, files=files, method='post')
+22.10.2020 19:45:44    File "C:\Users\robot\AppData\Local\Programs\Python\Python37\lib\site-packages\telebot\apihelper.py", line 108, in _make_request
+22.10.2020 19:45:44      json_result = _check_result(method_name, result)
+22.10.2020 19:45:44    File "C:\Users\robot\AppData\Local\Programs\Python\Python37\lib\site-packages\telebot\apihelper.py", line 135, in _check_result
+22.10.2020 19:45:44      raise ApiTelegramException(method_name, result, result_json)
+22.10.2020 19:45:44  telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400 Description: Bad Request: file must be non-empty
+03.11.2020 15:03:13  Traceback (most recent call last):
+03.11.2020 15:03:13    File "/home/maks/Документы/Заказы/exif_geo_bot-main/main.py", line 71, in text
+03.11.2020 15:03:13      user_change_step(message, 'main_menu')
+03.11.2020 15:03:13    File "/home/maks/Документы/Заказы/exif_geo_bot-main/main.py", line 236, in user_change_step
+03.11.2020 15:03:13      cursor.execute("UPDATE users SET step = ? WHERE user_id = ?", (step, from_id))
+03.11.2020 15:03:13  sqlite3.OperationalError: database is locked
